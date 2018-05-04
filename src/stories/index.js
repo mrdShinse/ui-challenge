@@ -2,7 +2,7 @@ import React from 'react';
 
 import { storiesOf } from '@storybook/react';
 
-import JobPosting from '../components/JobPosting'
+import WantedlyJobPosting from '../components/WantedlyJobPosting'
 
-storiesOf('JobPosting', module)
-  .add('default', () => <JobPosting />);
+storiesOf('WantedlyJobPosting', module)
+  .add('default', () => <WantedlyJobPosting />);

@@ -117,7 +117,7 @@ const styles = {
   }
 };
 
-const JobPosting = () => {
+const WantedlyJobPosting = () => {
   return (
     <div style={styles.container}>
       <div style={styles.innerContainer}>
@@ -167,4 +167,4 @@ const JobPosting = () => {
   )
 };
 
-export default JobPosting;
+export default WantedlyJobPosting;
