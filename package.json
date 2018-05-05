@@ -5,7 +5,8 @@
   "dependencies": {
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
-    "react-scripts": "1.1.4"
+    "react-scripts": "1.1.4",
+    "styled-components": "^3.2.6"
   },
   "scripts": {
     "react:start": "react-scripts start",
@@ -16,10 +17,10 @@
     "storybook:build": "build-storybook -s public"
   },
   "devDependencies": {
-    "@storybook/react": "^3.4.3",
     "@storybook/addon-actions": "^3.4.3",
     "@storybook/addon-links": "^3.4.3",
     "@storybook/addons": "^3.4.3",
+    "@storybook/react": "^3.4.3",
     "babel-core": "^6.26.3",
     "babel-runtime": "^6.26.0"
   }
