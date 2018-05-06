@@ -156,18 +156,18 @@ const WantedlyJobPosting = () => {
 
         <div className="actions">
           <div className="published-date">
-            <i class="far fa-clock"/>
+            <i className="far fa-clock"/>
             1 day ago
           </div>
           <div className="support-points">
             <a>
-              <i class="fas fa-volume-down"/>
+              <i className="fas fa-volume-down"/>
                 23
             </a>
           </div>
           <div className="bookmark-form">
             <div className="bookmark-button">
-              <i class="far fa-bookmark"/>
+              <i className="far fa-bookmark"/>
             </div>
           </div>
         </div>
