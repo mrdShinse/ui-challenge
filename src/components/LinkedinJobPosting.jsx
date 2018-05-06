@@ -5,12 +5,32 @@ import logo from '../images/logo.svg';
 
 const Wrapper = styled.li`
   border: 0.5px solid #ddd;
-  border-radius: 5px;
+  border-radius: 3px;
   width: 15em;
-  height: 100%;
+  height: 200px;
   display: block;
   padding: 15px;
   font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Fira Sans,Ubuntu,Oxygen,Oxygen Sans,Cantarell,Droid Sans,Lucida Grande,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Emoji,Segoe UI Symbol,Hiragino Kaku Gothic Pro,Meiryo,Hiragino Sans GB W3,Noto Naskh Arabic,Droid Arabic Naskh,Geeza Pro,Simplified Arabic,Noto Sans Thai,Thonburi,Dokchampa,Droid Sans Thai,Droid Sans Fallback,'.SFNSDisplay-Regular',Heiti SC,Microsoft Yahei;
+  position: fixed;
+
+  &:hover {
+    box-shadow: 0 0 0 1px rgba(0,0,0,.1), 0 2px 3px rgba(0,0,0,.2);
+    transition: box-shadow 83ms;
+
+    .hide-button {
+      visibility: visible;
+    }
+  }
+
+  .hide-button {
+    display: inline-block;
+    color: #bbb;
+    margin-left: auto;
+    visibility: hidden;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+  }
 
   .content {
     .position {
@@ -86,6 +106,9 @@ const LinkedinJobPosting = () => {
     <Wrapper>
       <div className="cover">
         <img src={logo} alt="logo"/>
+        <div className="hide-button">
+          <i className="fas fa-times"/>
+        </div>
       </div>
 
       <div className="content">
@@ -102,7 +125,7 @@ const LinkedinJobPosting = () => {
         </div>
 
         <div className="relation">
-          <i class="fas fa-university"/>
+          <i className="fas fa-university"/>
           <span>14人の卒業生</span>
         </div>
       </div>
@@ -113,7 +136,7 @@ const LinkedinJobPosting = () => {
           <span>1週間前</span>
         </time>
         <div className="notification">
-          <i class="fab fa-linkedin"/>
+          <i className="fab fa-linkedin"/>
           <span>Easy応募</span>
         </div>
       </div>
